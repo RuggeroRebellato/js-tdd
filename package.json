@@ -4,26 +4,26 @@
   "description": "JS with TDD practises lib.",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src/*.js",
+    "lint": "eslint src/**/*.js",
     "prepush": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./src/**/*.spec.js",
+    "test:tdd": "mocha --watch ./src/**/*.spec.js "
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.0.2",
     "eslint-plugin-import": "^2.7.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^4.0.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RuggeroRebellato/js-tdd.git"
   },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
-  "author": "Ruggero Rebellato <ruggerorebellato@gmail.com> (https://ruggerorebellato.com/)",
+  "keywords": ["js", "tdd", "library"],
+  "author":
+    "Ruggero Rebellato <ruggerorebellato@gmail.com> (https://ruggerorebellato.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RuggeroRebellato/js-tdd/issues"
