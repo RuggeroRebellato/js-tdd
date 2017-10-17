@@ -7,9 +7,12 @@
     "lint": "eslint src/**/*.js",
     "prepush": "npm run lint",
     "test": "mocha ./src/**/*.spec.js",
-    "test:tdd": "mocha --watch ./src/**/*.spec.js "
+    "test:tdd":
+      "mocha --watch ./src/**/*.spec.js --require babel-register --watch"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.0.2",
