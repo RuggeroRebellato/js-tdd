@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/**/*.js",
-    "precommit": "eslint src/**/*.js && npm run test:coverage",
+    "precommit": "eslint src/**/*.js && npm run test",
     "prepush": "npm run lint && npm run test:coverage",
     "test": "mocha ./src/**/*.spec.js --require babel-register",
     "test:tdd":

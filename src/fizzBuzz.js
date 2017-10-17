@@ -6,6 +6,4 @@ const FizzBuzz = (num) => {
   return num;
 };
 
-const foo = () => 'fuck man';
-
 export default FizzBuzz;
